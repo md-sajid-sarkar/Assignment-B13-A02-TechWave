@@ -20,12 +20,12 @@ html {
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     border: none;
 }
-.content-section{
+.content-section, .footer{
     background: rgba(26, 11, 46, 1);
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.section-container{
+.section-container, .footer-elements{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -43,7 +43,7 @@ font-weight: 700;
 line-height: 29px;
 color: rgba(255, 255, 255, 1)
 }
-.card-description{
+.card-description, .host-description{
     font-size: 16px;
 font-weight: 400;
 line-height: 24px;
@@ -267,7 +267,7 @@ color: rgba(255, 255, 255, 1)
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     border: 1px solid red;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 .featured-episodes-card{
     background: rgba(37, 13, 68, 1);
@@ -314,11 +314,6 @@ color: rgba(255, 255, 255, 1)
     flex-direction: column;
     gap: 12px;
 }
-
-
-
-
-
 .duration {
     font-size: 16px;
 font-weight: 600;
@@ -334,6 +329,80 @@ color: rgba(0, 255, 136, 1);
 .duration img {
     /* width: 20px; */
 }
+
+.host-section{
+    padding-top: 0;
+}
+.host-details{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+background: rgba(53, 17, 101, 0.4);
+padding: 40px;
+}
+.host-name{
+    font-size: 32px;
+font-weight: 700;
+line-height: 39px;
+color: rgba(255, 255, 255, 1);
+margin-bottom: 16px;
+}
+.host-description{
+    margin-bottom: 16px;
+}
+.host-social-icons{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.host-social-icons a{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.host-social-icons a:hover{
+    border-color: rgba(251, 9, 180, 1);
+    transform: scale(1.2);
+}
+
+.host-social-icons img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.footer{
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 4307px; */
+    text-align: center;
+
+}
+.footer-title{
+      font-size: 3.75rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+.footer-title span{
+  background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* display: inline-block; */
+}
+.footer-elements{
+
+}
+
 
 
 
