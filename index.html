@@ -3,15 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechWave</title>
+    <title>TechWave - Podcast Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/podcast.png">
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
+<body class="inter-font">
     <header>
-
+        <nav class="navigation">
+            <h3 class="logo">Tech<span>Wave</span></h3>
+            <ul class="nav-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+            </ul>
+            <button class="btn-primary">Subscribe  <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="hamburger-menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </nav>
     </header>
     <main>
+        <section class="hero-section">
+            <!-- <div class="background-img">
+                <img class="mid-img" src="./assets/hero-circle.png" alt="">
+                <img class="top-img" src="./assets/microphone.png" alt="">
+                
+                    <h1 class="hero-title">TechWave</h1>
+                    <p class="hero-description">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="buttons">
+                        <button class="spotify-btn">Listen On Spotify</button>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                
+            </div> -->
+        </section>
+        <section class="content-section about-section">
+            <div class="section-container">
+                <h2 class="about-title title">About the Podcast</h2>
+                <p class="about-description">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br> We break down complex topics into digestible insights, explore productivity strategies that actually work, <br> and share stories of personal growth from industry leaders. <br> <br>  Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                <div class="line">
 
+                </div>
+                <div class="statistics-container">
+                    <div class="stat-item">
+                        <h2 class="stat-number">150K+</h2>
+                        <p class="stat-description">Monthly Listeners</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="stat-number">200+</h2>
+                        <p class="stat-description">Episodes Published</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="stat-number">4.9★</h2>
+                        <p class="stat-description">Average Rating</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="stat-number">50+</h2>
+                        <p class="stat-description">Industry Experts</p>
+                    </div>
+                </div>               
+            </div>
+
+        </section>
+        <section class="content-section why-choose-section">
+            <div class="section-container">
+                <h2 class="why-choose-title title">Why Choose TechWave</h2>
+                <div class="why-choose-card-container">
+                    <div class="Premium-Audio-Quality card-style">
+                        <img src="./assets/headphone.png" alt="">
+                        <h3 class="why-choose-card-title card-title">Premium Audio Quality</h3>
+                        <p class="why-choose-card-description card-description">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="Mobile-Friendly card-style">
+                        <img src="./assets/device.png" alt="">
+                        <h3 class="why-choose-card-title card-title">Mobile Friendly</h3>
+                        <p class="why-choose-card-description card-description">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </div>
+                    <div class="Global-Community card-style">
+                        <img src="./assets/location.png" alt="">
+                        <h3 class="why-choose-card-title card-title">Global Community</h3>
+                        <p class="why-choose-card-description card-description">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                    </div>
+                    <div class="Exclusive-Interviews card-style">
+                        <img src="./assets/interviews.png" alt="">
+                        <h3 class="why-choose-card-title card-title">Exclusive Interviews</h3>
+                        <p class="why-choose-card-description card-description">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                    </div>
+                    <div class="Rich-Resources card-style">
+                        <img src="./assets/resource.png" alt="">
+                        <h3 class="why-choose-card-title card-title">Rich Resources</h3>
+                        <p class="why-choose-card-description card-description">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section featured-episodes-section">
+            <div class="section-container">
+                <h2 class="featured-episodes-title title">Featured Episodes</h2>
+                <div class="featured-episodes-card-container">
+                    <div class="featured-episodes-card">
+                        <div class="yt-thumbnail">
+                            <iframe src="https://www.youtube.com/embed/KKNCiRWd_j0?si=e2Hr4p6cc4N92wvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card-details">
+                            <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                            <p class="card-description">
+                                Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.
+                            </p>
+                            <p class="duration"><img src="./assets/clock.png" alt="">42 min</p>
+                        </div>
+                    </div>
+
+                    <div class="featured-episodes-card">
+                        <div class="yt-thumbnail">
+                            <iframe src="https://www.youtube.com/embed/ObA4ne4TVsE?si=QkILqOVd1p5bhnje" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card-details">
+                            <h3 class="card-title">Building Better Habits for Remote Work</h3>
+                            <p class="card-description">Practical strategies for staying productive and maintaining work-life balance in a remote environment.
+                            </p>
+                            <p class="duration"><img src="./assets/clock.png" alt="">35 min</p>
+                        </div>
+                    </div>
+
+                    <div class="featured-episodes-card">
+                        <div class="yt-thumbnail">
+                            <iframe src="https://www.youtube.com/embed/UjqeYvBGhQw?si=bTH2DWTN0_x2Ih6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card-details">
+                            <h3 class="card-title">Career Growth in Tech: A Roadmap</h3>
+                            <p class="card-description">
+                                Expert advice on navigating your tech career from junior developer to leadership roles.
+                            </p>
+                            <p class="duration">
+                                <img src="./assets/clock.png" alt="">
+                                51 min
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="featured-episodes-card">
+                        <iframe class="youtube-video" width="100%"  src="https://www.youtube.com/embed/KKNCiRWd_j0?si=TwtbFWwxZVtpv0kD" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-details">
+                            
+                            <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                            <p class="card-description">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <p><img src="./assets/clock.png" alt="clock">42 min</p>
+                        </div>
+                    </div>
+                    <div class="featured-episodes-card">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/ObA4ne4TVsE?si=ryNgTJafEKEycV5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="card-details">
+                            
+                            <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                            <p class="card-description">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <p><img src="./assets/clock.png" alt="clock">42 min</p>
+                        </div>
+                    </div>
+                    <div class="featured-episodes-card">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/UjqeYvBGhQw?si=bTH2DWTN0_x2Ih6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="card-details">
+                            
+                            <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                            <p class="card-description">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <p><img src="./assets/clock.png" alt="clock">42 min</p>
+                        </div>
+                    </div> -->
+
+
+
+                    <!-- <div class="featured-episodes-card">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/ObA4ne4TVsE?si=ryNgTJafEKEycV5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                        <p class="card-description">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <p><img src="./assets/clock.png" alt="clock">42 min</p>
+                    </div>
+                    <div class="featured-episodes-card">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/UjqeYvBGhQw?si=bTH2DWTN0_x2Ih6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3 class="card-title">The Future of AI in Everyday Life</h3>
+                        <p class="card-description">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <p><img src="./assets/clock.png" alt="clock">42 min</p>
+                    </div> -->
+                </div>
+                <h2 class="featured-episodes-title title">Meet the host</h2>
+            </div>
+
+        </section>
     </main>
     <footer>
 
