@@ -2,14 +2,21 @@
 .inter-font{
   font-family: "Inter", sans-serif;
 }
-html {
+
+html{
   font-size: 16px;
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+
+
+
+
+/* CSS about Animation */
 @keyframes float {
   0%{
     transform: translateY(0);
@@ -44,10 +51,10 @@ html {
   from{
     opacity: 0;
     transform: translateY(50px);
-  }
+    }
   to{
     opacity: 1;
-  }
+    }
 }
 .hero-title{
   animation: fadeUp 1s ease forwards;
@@ -77,6 +84,11 @@ html {
 .play-btn{
   animation: pulse 2s infinite;
 }
+
+
+
+
+/* CSS about button hober effect */
 .hover-effect{
   transition: transform 0.3s ease-in-out,0.2s ease-in-out;
 }
@@ -87,6 +99,7 @@ html {
 
 
 
+
 /* Common used CSS */
 .btn-primary{
     padding: 12px 16px;
@@ -94,18 +107,18 @@ html {
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     border: none;
     font-size: 16px;
-font-weight: 600;
-line-height: 19px;
-color: rgba(255, 255, 255, 1);
-cursor: pointer;
+    font-weight: 600;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 .spotify-btn a, .subscribe-btn-1 a, .subscribe-btn-2 a{
     text-decoration: none;
-        font-size: 16px;
-font-weight: 600;
-line-height: 19px;
-color: rgba(255, 255, 255, 1);
-display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -121,23 +134,23 @@ display: flex;
 }
 .title{
     font-size: 3rem;
-font-weight: 700;
-line-height: 58px;
-color: rgba(255, 255, 255, 1);
-margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 58px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 40px;
 }
 .card-title{
     font-size: 24px;
-font-weight: 700;
-line-height: 29px;
-color: rgba(255, 255, 255, 1)
+    font-weight: 700;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1)
 }
 .card-description, .host-description, .copyright{
     font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: rgba(255, 255, 255, 1);
-opacity: 0.6;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
 }
 
 
@@ -154,16 +167,15 @@ opacity: 0.6;
     align-items: center;
 }
 .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }
 
 .logo span{
-  background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* display: inline-block; */
+    background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .nav-links{
     display: flex;
@@ -188,7 +200,11 @@ opacity: 0.6;
 }
 
 
-/* Hero related CSS */
+
+
+
+
+/* CSS about Hero section */
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -214,17 +230,17 @@ opacity: 0.6;
     position: absolute;
     z-index: 2;
     top: 10%;
-      width: 350px;
-  max-width: 60vw;
-  height: auto;
+    width: 350px;
+    max-width: 60vw;
+    height: auto;
 }
 .top-img{
     position: absolute;
     z-index: 3;
     top: 22%;
     width: 116.67px;
-  max-width: 15vw;
-  height: auto;
+    max-width: 15vw;
+    height: auto;
 }
 .new-icon{
     background-color: rgba(0, 255, 136, 1);
@@ -241,41 +257,35 @@ opacity: 0.6;
     left: 55%;
 }
 .banner-details{
-    /* border: 1px solid red; */
     text-align: center;
     position: absolute;
     top: 65%;
 }
 .hero-title{
     font-size: 3.75rem;
-font-weight: 800;
-line-height: 73px;
-color: rgba(255, 255, 255, 1);
-letter-spacing: 2px;
-margin-bottom: 8px;
+    font-weight: 800;
+    line-height: 73px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
 }
 .hero-description{
     font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-color: rgba(255, 255, 255, 1);
-opacity: 0.6;
-margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    margin-bottom: 24px;
 }
 .buttons{
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-
 .subscribe-btn-2{
     padding: 12.5px 20px;
     border-radius: 10000px;
     border: 1px solid rgba(0, 255, 136, 1);
-    /* color: rgba(0, 255, 136, 1); */
-    /* font-size: 16px;
-    font-weight: 600;
-    line-height: 19px; */
     background-color: transparent;
     cursor: pointer;
 }
@@ -287,34 +297,33 @@ margin-bottom: 24px;
 }
 .subscribe-btn img{
     width: 18px;
-height: 14px;
+    height: 14px;
 }
 
 
 
 
+
+/* CSS about about-section  */
 .about-section{
     padding-top: 50px;
 }
-
 .about-title{
-margin-bottom: 16px ;
+    margin-bottom: 16px ;
 }
 .about-description{
     font-size: 16px;
-font-weight: 300;
-line-height: 20px;
-color: rgba(255, 255, 255, 1);
-opacity: 0.8;
-margin-bottom: 80px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
+    margin-bottom: 80px;
 }
 .line{
     border-top: 1px solid rgba(255, 255, 255, 1);
 }
 .statistics-container{
     margin-top: 80px;
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -322,25 +331,25 @@ margin-bottom: 80px;
     padding: 0 10px;
     transition: transform 0.3s ease;
 }
-    .stat-item:hover{
-        transform: translateY(-6px) scale(1.05);
-    }
+.stat-item:hover{
+    transform: translateY(-6px) scale(1.05);
+}
 
 .stat-number{
     font-size: 3rem;
-font-weight: 900;
-line-height: 58px;
-color: rgba(0, 255, 136, 1);
-margin-bottom: 16px;
-letter-spacing: 2px;
+    font-weight: 900;
+    line-height: 58px;
+    color: rgba(0, 255, 136, 1);
+    margin-bottom: 16px;
+    letter-spacing: 2px;
 }
 .stat-description{
     opacity: 0.8;
     text-transform: uppercase;
     font-size: 1rem;
-font-weight: 400;
-line-height: 20px;
-color: rgba(255, 255, 255, 1)
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1)
 }
 
 
@@ -348,6 +357,9 @@ color: rgba(255, 255, 255, 1)
 
 
 
+
+
+/* CSS about why choose Section   */
 .why-choose-section{
     background: rgba(35, 14, 61, 1);
 }
@@ -356,8 +368,6 @@ color: rgba(255, 255, 255, 1)
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    /* text-align: start; */
-    
 }
 .card-style{
     text-align: start;
@@ -370,15 +380,11 @@ color: rgba(255, 255, 255, 1)
     align-items: flex-start;
     justify-content: center;
     transition: 0.3s;
-
 }
 
-/* Hover Effect */
+/* Hover Effect of card */
 .card-style:hover{
     transform: translateY(-9px);
-}
-.card-style img{
-    /* max-width: 60px; */
 }
 .Premium-Audio-Quality{
     grid-row: 1/span 2;
@@ -392,52 +398,18 @@ color: rgba(255, 255, 255, 1)
 .Exclusive-Interviews{
     grid-column: 1/span 2;
 }
-.why-choose-card-title{
-}
-.why-choose-card-description{
-    
-}
 
 
 
 
-/* .featured-episodes-card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-} */
-/* .featured-episodes-card{
-    background: rgba(53, 17, 101, 0.4);
-    border-radius: 24px;
-} */
-/* .featured-episodes-card {
-    background: #2a0f47;
-    border-radius: 18px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-.featured-episodes-card:hover {
-    transform: translateY(-6px);
-}
-.card-details{
-    text-align: start;
-    
-    
-    padding: 0 24px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.youtube-video{
-    margin-bottom: 24px;
-    padding: 1px;
-} */
+
+
+
+/* CSS about feature episode section  */
 .featured-episodes-card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    /* border: 1px solid red; */
-    /* margin-bottom: 120px; */
 }
 .featured-episodes-card{
     background: rgba(37, 13, 68, 1);
@@ -445,38 +417,33 @@ color: rgba(255, 255, 255, 1)
     overflow: hidden;
     transition: 0.3s;
 }
-
+/* feature episode card hover  */
 .featured-episodes-card:hover {
     transform: translateY(+8px);
 }
-
 .yt-thumbnail{
     position: relative;
     width: 100%;
     aspect-ratio: 32/18;
     overflow: hidden;
 }
-
 .yt-thumbnail iframe{
     width: 100%;
     height: 100%;
     border: none;
 }
-
 .play-btn{
     position: absolute;
     top: 40%;
     left: 42%;
     transform: translate(-50%, -50%);
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
-    /* padding: 14px 20px; */
     padding: 18px;
     border-radius: 50%;
     font-size: 18px;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
-
 .card-details {
     text-align: start;
     padding: 24px;
@@ -486,20 +453,25 @@ color: rgba(255, 255, 255, 1)
 }
 .duration {
     font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-color: rgba(0, 255, 136, 1);
-/* border: 1px solid red; */
-
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(0, 255, 136, 1);
     display: flex;
     gap: 7px;
     align-items: center;
 }
 
-.duration img {
-    /* width: 20px; */
-}
 
+
+
+
+
+
+
+
+
+
+/* CSS about host section  */
 .host-section{
     padding-top: 0;
 }
@@ -509,28 +481,27 @@ color: rgba(0, 255, 136, 1);
     align-items: center;
     gap: 24px;
     border-radius: 40px;
-background: rgba(53, 17, 101, 0.4);
-padding: 40px;
-transition: 0.4s ease;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    transition: 0.4s ease;
 }
-
-
+/* hover effect about host details  */
 .host-details:hover{
-  box-shadow: 0 0 30px rgba(145,0,248,0.4);
+    box-shadow: 0 0 30px rgba(145,0,248,0.4);
 }
-/* Hover Effect */
 .host-photo{
     transition: 0.3s ease;
 }
+/* Hover Effect of host photos */
 .host-photo:hover{
     transform: scale(1.2);
 }
 .host-name{
     font-size: 32px;
-font-weight: 700;
-line-height: 39px;
-color: rgba(255, 255, 255, 1);
-margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 39px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
 }
 .host-description{
     margin-bottom: 16px;
@@ -550,11 +521,11 @@ margin-bottom: 16px;
     align-items: center;
     transition: 0.3s ease;
 }
+/* hover effect of host social links */
 .host-social-icons a:hover{
     border-color: rgba(251, 9, 180, 1);
     transform: scale(1.2);
 }
-
 .host-social-icons img{
     width: 16px;
     height: 16px;
@@ -562,26 +533,27 @@ margin-bottom: 16px;
 
 
 
+
+
+
+/* CSS about footer section  */
 .footer{
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 4307px; */
     text-align: center;
-
 }
 .footer-title{
-      font-size: 3.75rem;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 32px;
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
 }
 .footer-title span{
-  background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* display: inline-block; */
+    background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .footer-social-links{
     display: flex;
@@ -589,32 +561,25 @@ margin-bottom: 16px;
     gap: 42px;
     align-items: center;
     margin-bottom: 32px;
-
 }
-/* Hover Effect */
+/* Hover Effect of footer social link element */
 .footer-social-link-element {
     transition: transform 0.3s ease;
 }
 .footer-social-link-element:hover{
     transform: translateY(-6px) scale(1.1);
 }
-
 .footer-social-link-element a{
     text-decoration: none;
-        font-size: 1rem;
-font-weight: 500;
-line-height: 19px;
-color: rgba(255, 255, 255, 1);
-opacity: 0.6;
-display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    display: flex;
     align-items: center;
     gap: 10px;
 }
-
-.footer-social-link-element a{
-    
-}
-
 
 
 
@@ -630,7 +595,7 @@ display: flex;
 
 
 @media screen and (max-width: 576px) {
-      html{
+    html{
         font-size: 12px;
     }
     .nav-links, .subscribe-btn-1{
@@ -643,31 +608,29 @@ display: flex;
         display: block;
         cursor: pointer;
     }
-
-      .background-img{
-    background-image: url("../assets/hero-bg-small.png");
-  }
+    .background-img{
+        background-image: url("../assets/hero-bg-small.png");
+    }
     .mid-img{
-  width: 55vw;
-    max-width: 200px;
-    top: 21%;
-}
-.top-img{
+        width: 55vw;
+        max-width: 200px;
+        top: 19%;
+    }
+    .top-img{
         width: 12vw;
-    max-width: 46.67px;
-    top: 27.5%;
-}
-.new-icon{
-    top: 21%;
-    left: 59%;
-}
-.banner-details{
-    top: 50%;
-}
-.about-description{
+        max-width: 46.67px;
+        top: 26.5%;
+    }
+    .new-icon{
+        top: 20%;
+        left: 59%;
+    }
+    .banner-details{
+        top: 50%;
+    }
+    .about-description{
         margin-bottom: 40px;
-}
-
+    }
     .statistics-container{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -680,51 +643,42 @@ display: flex;
     .stat-item{
         padding: 0px;
     }
-    
-    
     .why-choose-card-container {
-    display: flex;
-    flex-direction: column;
-
-    /* grid-template-rows: repeat(3, 1fr); */
-    gap: 16px;
-    /* text-align: start; */
-}
-.section-container{
-    /* padding: 40px; */
-}
-.content-section, .footer {
-    /* background: rgb(35, 14, 61); */
-    padding: 40px 20px;
-}
-.featured-episodes-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.title{
-    margin-bottom: 16px;
-}
-.host-details{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.host-introduction  {
-    text-align: center;
-}
-.host-social-icons{
-    justify-content: center;
-}
-.footer-title{
-    margin-bottom: 24px;
-}
-.footer-social-links{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      place-items: center;
-}
-.footer{
-    background-image: url(../assets/Footer-bg-small.png);
-}
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .content-section, .footer {
+        padding: 40px 20px;
+    }
+    .featured-episodes-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .title{
+        margin-bottom: 16px;
+    }
+    .host-details{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .host-introduction  {
+        text-align: center;
+    }
+    .host-social-icons{
+        justify-content: center;
+    }
+    .footer-title{
+        margin-bottom: 24px;
+    }
+    .footer-social-links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    .footer{
+        background-image: url(../assets/Footer-bg-small.png);
+    }
 }
