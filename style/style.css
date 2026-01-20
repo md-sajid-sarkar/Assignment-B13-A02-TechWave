@@ -93,7 +93,7 @@ html {
     border-radius: 10000px;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     border: none;
-    font-size: 1rem;
+    font-size: 16px;
 font-weight: 600;
 line-height: 19px;
 color: rgba(255, 255, 255, 1);
@@ -101,7 +101,7 @@ cursor: pointer;
 }
 .spotify-btn a, .subscribe-btn-1 a, .subscribe-btn-2 a{
     text-decoration: none;
-        font-size: 1rem;
+        font-size: 16px;
 font-weight: 600;
 line-height: 19px;
 color: rgba(255, 255, 255, 1);
@@ -214,11 +214,17 @@ opacity: 0.6;
     position: absolute;
     z-index: 2;
     top: 10%;
+      width: 350px;
+  max-width: 60vw;
+  height: auto;
 }
 .top-img{
     position: absolute;
     z-index: 3;
     top: 22%;
+    width: 116.67px;
+  max-width: 15vw;
+  height: auto;
 }
 .new-icon{
     background-color: rgba(0, 255, 136, 1);
@@ -253,7 +259,7 @@ margin-bottom: 8px;
 font-weight: 400;
 line-height: 19px;
 color: rgba(255, 255, 255, 1);
-opacity: 0.8;
+opacity: 0.6;
 margin-bottom: 24px;
 }
 .buttons{
@@ -627,7 +633,7 @@ display: flex;
       html{
         font-size: 12px;
     }
-    .nav-links, .btn-primary{
+    .nav-links, .subscribe-btn-1{
         display: none;
     }
     .navigation{
@@ -651,7 +657,27 @@ height: 200px;
         width: 46.67px;
 height: 70px;
     } */
-     
+    .mid-img{
+  width: 55vw;
+    max-width: 240px;
+    top: 14%;
+}
+.top-img{
+        width: 12vw;
+    max-width: 49.67px;
+    top: 28%;
+}
+.new-icon{
+    top: 14%;
+    left: 58%;
+}
+.banner-details{
+    top: 59%;
+}
+.buttons{
+    flex-wrap: wrap;
+}
+
     .statistics-container{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
