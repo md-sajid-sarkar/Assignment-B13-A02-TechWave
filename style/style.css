@@ -301,7 +301,7 @@ height: 14px;
 margin-bottom: 16px ;
 }
 .about-description{
-    font-size: 1rem;
+    font-size: 16px;
 font-weight: 300;
 line-height: 20px;
 color: rgba(255, 255, 255, 1);
@@ -643,45 +643,36 @@ display: flex;
         display: block;
         cursor: pointer;
     }
-/* 
+
       .background-img{
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url("../assets/hero-bg-small.png");
   }
     .mid-img{
-    width: 200px;
-height: 200px;
-    }
-    .top-img{
-        width: 46.67px;
-height: 70px;
-    } */
-    .mid-img{
   width: 55vw;
-    max-width: 240px;
-    top: 14%;
+    max-width: 200px;
+    top: 21%;
 }
 .top-img{
         width: 12vw;
-    max-width: 49.67px;
-    top: 28%;
+    max-width: 46.67px;
+    top: 27.5%;
 }
 .new-icon{
-    top: 14%;
-    left: 58%;
+    top: 21%;
+    left: 59%;
 }
 .banner-details{
-    top: 59%;
+    top: 50%;
 }
-.buttons{
-    flex-wrap: wrap;
+.about-description{
+        margin-bottom: 40px;
 }
 
     .statistics-container{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 40px;
+        margin-top: 40px;
     }
     .about-details{
         padding: 40px 20px;
@@ -703,7 +694,7 @@ height: 70px;
     /* padding: 40px; */
 }
 .content-section, .footer {
-    background: rgba(26, 11, 46, 1);
+    /* background: rgb(35, 14, 61); */
     padding: 40px 20px;
 }
 .featured-episodes-card-container {
@@ -712,7 +703,7 @@ height: 70px;
     gap: 16px;
 }
 .title{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 .host-details{
     display: flex;
@@ -734,6 +725,6 @@ height: 70px;
       place-items: center;
 }
 .footer{
-    background-size: contain;
+    background-image: url(../assets/Footer-bg-small.png);
 }
 }
