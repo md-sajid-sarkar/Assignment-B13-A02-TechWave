@@ -1,17 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
 .inter-font{
   font-family: "Inter", sans-serif;
 }
 html {
   font-size: 16px;
 }
-
 *{
     margin: 0px;
     padding: 0px;
 }
+
+@keyframes float {
+  0%{
+    transform: translateY(0);
+    }
+  50%{
+    transform: translateY(-14px);
+    }
+  100%{
+    transform: translateY(0);
+    }
+}
+.mid-img{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%{
+    text-shadow: 0 0 0 rgba(247, 232, 63, 0.297);
+    }
+  50%{
+    text-shadow: 0 0 24px rgba(251,9,180,0.8);
+    }
+  100%{
+    text-shadow: 0 0 12px rgba(145, 0, 248, 1);
+    }
+}
+.logo{
+  animation: glow 4s infinite;
+}
+
+@keyframes fadeUp {
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to{
+    opacity: 1;
+  }
+}
+.hero-title{
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-description{
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.buttons{
+  animation: fadeUp 1.4s ease forwards;
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0,255,136,0.6);
+  }
+  70%{
+    transform: scale(1.05);
+    box-shadow: 0 0 0 14px rgba(0,255,136,0);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+.play-btn{
+  animation: pulse 2s infinite;
+}
+.hover-effect{
+  transition: transform 0.3s ease-in-out,0.2s ease-in-out;
+}
+.hover-effect:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px rgba(251, 9, 180, 1);
+}
+
+
 
 /* Common used CSS */
 .btn-primary{
@@ -65,12 +139,7 @@ line-height: 24px;
 color: rgba(255, 255, 255, 1);
 opacity: 0.6;
 }
-.hover-effect{
-    transition: 0.2s ease-in-out;
-}
-.hover-effect:hover{
-    box-shadow: 0 0 10px rgba(251, 9, 180, 1);
-}
+
 
 
 
@@ -125,9 +194,10 @@ opacity: 0.6;
     height: 100vh;
 }
 .background-img{
-    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-top: 1px solid rgba(255, 255, 255, 0.188);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; 
+    min-height: 100svh;
     background-image: url("../assets/hero-bg.png");
     background-size: cover;
     background-position: center;
@@ -137,21 +207,32 @@ opacity: 0.6;
     align-items: center;
     flex-direction: column;
     position: relative;
+    padding: 80px 20px;
+    box-sizing: border-box;
 }
 .mid-img{
-    /* border: 1px solid red; */
     position: absolute;
-    /* max-width: 21.875rem; */
-    /* max-width: 50vw; */
     z-index: 2;
     top: 10%;
 }
 .top-img{
-    /* border: 1px solid red; */
     position: absolute;
-    /* max-width: 7.25rem; */
     z-index: 3;
     top: 22%;
+}
+.new-icon{
+    background-color: rgba(0, 255, 136, 1);
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    color: rgba(26, 11, 46, 1);
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 1000px;
+    z-index: 4;
+    position: absolute;
+    top: 12%;
+    left: 55%;
 }
 .banner-details{
     /* border: 1px solid red; */
@@ -233,7 +314,12 @@ margin-bottom: 80px;
 }
 .stat-item{
     padding: 0 10px;
+    transition: transform 0.3s ease;
 }
+    .stat-item:hover{
+        transform: translateY(-6px) scale(1.05);
+    }
+
 .stat-number{
     font-size: 3rem;
 font-weight: 900;
@@ -373,8 +459,8 @@ color: rgba(255, 255, 255, 1)
 
 .play-btn{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 42%;
     transform: translate(-50%, -50%);
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     /* padding: 14px 20px; */
@@ -419,8 +505,13 @@ color: rgba(0, 255, 136, 1);
     border-radius: 40px;
 background: rgba(53, 17, 101, 0.4);
 padding: 40px;
+transition: 0.4s ease;
 }
 
+
+.host-details:hover{
+  box-shadow: 0 0 30px rgba(145,0,248,0.4);
+}
 /* Hover Effect */
 .host-photo{
     transition: 0.3s ease;
@@ -496,10 +587,10 @@ margin-bottom: 16px;
 }
 /* Hover Effect */
 .footer-social-link-element {
-    transition:  0.3s;
+    transition: transform 0.3s ease;
 }
 .footer-social-link-element:hover{
-    transform: translateY(+8px);
+    transform: translateY(-6px) scale(1.1);
 }
 
 .footer-social-link-element a{
@@ -546,7 +637,7 @@ display: flex;
         display: block;
         cursor: pointer;
     }
-
+/* 
       .background-img{
     background-size: cover;
     background-position: center;
@@ -559,7 +650,7 @@ height: 200px;
     .top-img{
         width: 46.67px;
 height: 70px;
-    }
+    } */
      
     .statistics-container{
         grid-template-columns: repeat(2, 1fr);
@@ -572,6 +663,8 @@ height: 70px;
     .stat-item{
         padding: 0px;
     }
+    
+    
     .why-choose-card-container {
     display: flex;
     flex-direction: column;
