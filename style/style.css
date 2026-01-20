@@ -610,20 +610,21 @@ html{
     }
     .background-img{
         background-image: url("../assets/hero-bg-small.png");
+        margin-bottom: 0;
     }
     .mid-img{
         width: 55vw;
         max-width: 200px;
-        top: 19%;
+        top: 18%;
     }
     .top-img{
         width: 12vw;
         max-width: 46.67px;
-        top: 26.5%;
+        top: 25%;
     }
     .new-icon{
         top: 20%;
-        left: 59%;
+        left: 58%;
     }
     .banner-details{
         top: 50%;
@@ -639,6 +640,9 @@ html{
     }
     .about-details{
         padding: 40px 20px;
+    }
+    .about-section{
+        margin-top: 0;
     }
     .stat-item{
         padding: 0px;
